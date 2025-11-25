@@ -18,7 +18,7 @@ body {
 }
 
 header{
-    background-color: #b8b2b283;
+    background-color: #44434343;
     height: 50px;
     width: 400px;
     display: flex;
@@ -52,7 +52,7 @@ a:hover::after {
 
 
 #container1{
-    background-image: url(https://i.pinimg.com/1200x/9a/be/a9/9abea96bd01a1a4c4ebedb0a30b775cc.jpg);
+    background-image: url("img/rj\ wallpaper.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
