@@ -72,7 +72,20 @@ a:hover::after {
     width: 100vw;
     background-color: rgb(0, 0, 0);
     position: relative;
+    gap: 40px;
 }
+
+#container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+
 
 .textHome{
     color: white;
@@ -96,6 +109,19 @@ a:hover::after {
     margin-top: 140px;;
 }
 
+#container2 h2{
+    font-size: 52px;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+#container2 p{
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 #container2::before {
     content: "";
     position: absolute;
@@ -108,4 +134,99 @@ a:hover::after {
         rgb(0, 0, 0)    /* preto embaixo */
     );
     pointer-events: none;
+}
+
+#container3 h2{
+    font-size: 52px;
+    margin-top: 100px;
+    justify-self: center;
+}
+
+.carrosel{
+    overflow: hidden;
+    width: 100vw;
+}
+
+.trilho{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: slide 15s linear infinite;
+}
+
+.trilho2{
+    animation: slide 15s linear infinite reverse;
+}
+
+.trilho img{
+    width: 170px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.personagensContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+.cardPersonagem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 425px;
+    background-color: #333;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: white 0px 0px 10px;
+}
+
+.cardPersonagem:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.cardPersonagem img{
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.textPersonagem h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.textPersonagem p{
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+}
+
+.textPersonagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 35%;
+    border-top: white 2px solid;
+    background-color: rgb(0, 0, 0);
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+@keyframes slide {
+    to {
+        translate: calc(-4 * 250px)
+    }
 }
