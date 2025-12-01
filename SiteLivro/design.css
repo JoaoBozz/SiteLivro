@@ -20,7 +20,7 @@ body {
 header{
     background-color: #44434343;
     height: 50px;
-    width: 400px;
+    width: 500px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -63,6 +63,17 @@ a:hover::after {
     width: 100vw;
 }
 
+#container0{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
 #container2{
     display: flex;
     flex-direction: column;
@@ -70,7 +81,7 @@ a:hover::after {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     position: relative;
     gap: 40px;
 }
@@ -85,7 +96,29 @@ a:hover::after {
     position: relative;
 }
 
+#container0 p{
+    text-align: start;
+    font-size: 20px;
+}
 
+
+.textProf h2{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.textProf p{
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+}
+
+.imagemProf img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
 .textHome{
     color: white;
@@ -122,7 +155,7 @@ a:hover::after {
     margin-bottom: 40px;
 }
 
-#container2::before {
+#container0::before {
     content: "";
     position: absolute;
     top: -300px;        /* Altura da nevoa */
@@ -231,21 +264,18 @@ a:hover::after {
     }
 }
 
-/* Estado inicial (escondido) */
-.reveal {
+/* .reveal {
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
 }
 
-/* Quando entrar na tela */
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Quando sair da tela */
 .reveal.hidden {
     opacity: 0;
     transform: translateY(-50px);
-}
+} */
