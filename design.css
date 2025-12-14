@@ -52,7 +52,7 @@ a:hover::after {
 
 
 #container1{
-    background-image: url("./img/rj\ wallpaper.jpg");
+    background-image: url("./img/rj-wallpaper.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
